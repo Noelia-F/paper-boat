@@ -55,6 +55,38 @@
   height: 30px;
   border-radius: 0 50% / 0 100%;
   background: lightblue;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: movewaves;
+  animation-name: movewaves;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes movewaves {
+  from {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes movewaves {
+  from {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
