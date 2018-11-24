@@ -33,9 +33,19 @@
   border-top: 100px solid #fff;
 }
 
+.waves {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .waves__individual {
-  width: 100px;
-  height: 50px;
+  margin: -3px;
+  width: 60px;
+  height: 30px;
   border-radius: 0 50% / 0 100%;
   background-color: grey;
 }
