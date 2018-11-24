@@ -1,0 +1,9 @@
+
+.waves__individual {
+    width: 100px;
+    height: 50px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background-color: $wavesColor;
+}
