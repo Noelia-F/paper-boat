@@ -1,5 +1,9 @@
 .boat {
 	margin: auto;
+	animation-duration: 3s;
+    animation-name: moveboat;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .boat__top {
@@ -14,4 +18,11 @@
 	border-right: 60px solid transparent;
 	border-left: 60px solid transparent;
 	border-top: 100px solid $boatColor;
+}
+
+/** animaciones **/
+
+@keyframes moveboat {
+	0% { transform: rotate(10deg); }
+	100%{ transform: rotate(-10deg); } 
 }

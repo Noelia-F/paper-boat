@@ -18,6 +18,14 @@
 
 .boat {
   margin: auto;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: moveboat;
+  animation-name: moveboat;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .boat__top {
@@ -38,9 +46,7 @@
   border-right: 60px solid transparent;
   border-left: 60px solid transparent;
   border-top: 100px solid #fff;
-}
-
-.waves {
+}/** animaciones **/.waves {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,30 +56,52 @@
 }
 
 .waves__individual {
-  margin: -4px;
+  margin: -4px -5px;
   width: 60px;
   height: 30px;
   border-radius: 0 50% / 0 100%;
   background: lightblue;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-name: movewaves;
   animation-name: movewaves;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+}/** animaciones **/@-webkit-keyframes moveboat {
+  0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}@keyframes moveboat {
+  0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
 }
 
 @-webkit-keyframes movewaves {
   from {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
+    margin: -4px -7px;
   }
 
   to {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    margin: -4px -5px;
   }
 }
 
@@ -81,11 +109,13 @@
   from {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
+    margin: -4px -7px;
   }
 
   to {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    margin: -4px -5px;
   }
 }
 
