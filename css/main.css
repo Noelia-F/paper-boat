@@ -5,8 +5,15 @@
   box-sizing: border-box;
 }
 
-.body {
-  background-color: lightblue;
+.image-box {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9cd9f7), to(#c45e39));
+  background: linear-gradient(to bottom, #9cd9f7 0%, #c45e39 100%);
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  border: 2px solid #333;
+  overflow: hidden;
 }
 
 .boat {
@@ -43,11 +50,11 @@
 }
 
 .waves__individual {
-  margin: -3px;
+  margin: -4px;
   width: 60px;
   height: 30px;
   border-radius: 0 50% / 0 100%;
-  background-color: grey;
+  background: lightblue;
 }
 
 /*# sourceMappingURL=main.css.map */
