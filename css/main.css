@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");/*Wrapper*/* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 .body {
   background-color: lightblue;
+}
+
+.about-me {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

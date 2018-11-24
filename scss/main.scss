@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-.body {
-    background-color: lightblue;
-}
+@import 'core/variables';
+
+@import 'pages/index';
+
+@import 'components/boat';
