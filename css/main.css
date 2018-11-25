@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");/*Wrapper*/* {
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -18,9 +22,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.image-box {
+}/** marco general animación **/.image-box {
   background: -webkit-gradient(linear, left top, left bottom, from(#9cd9f7), to(#c45e39));
   background: linear-gradient(to bottom, #9cd9f7 0%, #c45e39 100%);
   margin: auto;
@@ -30,9 +32,7 @@
   max-height: 225px;
   border: 2px solid #333;
   overflow: hidden;
-}
-
-.boat {
+}/** barquito **/.boat {
   margin: auto;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -62,7 +62,7 @@
   border-right: 60px solid transparent;
   border-left: 60px solid transparent;
   border-top: 100px solid #fff;
-}/** animaciones **/.waves {
+}/** animaciones **//** olas **/.waves {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,6 @@
 .signature {
   font-size: 12px;
   font-weight: lighter;
-  text-align: right;
 }
 
 @-webkit-keyframes moveboat {
