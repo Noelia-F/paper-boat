@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");/*Wrapper*/* {
+@import url("https://fonts.googleapis.com/css?family=Raleway");/*Wrapper*/* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .body {
+  font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +15,9 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .image-box {
@@ -75,7 +76,7 @@
   width: 60px;
   height: 30px;
   border-radius: 0 50% / 0 100%;
-  background: lightblue;
+  background: #7eb8cd;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-name: movewaves;
@@ -84,7 +85,19 @@
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
-}/** animaciones **/@-webkit-keyframes moveboat {
+}/** animaciones **/.title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #7d7d7d;
+}
+
+.signature {
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: right;
+}
+
+@-webkit-keyframes moveboat {
   0% {
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
@@ -94,7 +107,9 @@
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
-}@keyframes moveboat {
+}
+
+@keyframes moveboat {
   0% {
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
